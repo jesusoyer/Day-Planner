@@ -3,26 +3,31 @@ var today= moment();
 var dayOfWeek = moment().format('dddd, ' + "LL");   
 $("#currentDay").text(dayOfWeek);
 
+var firstDiv = $("#toDoList")
+var secondDiv = $("#toDoList2")
+var thirdDiv = $("#toDoList3")
 
-var saveButton = document.querySelector("#button")
 
-saveButton.addEventListener("click", function(event) {
+
+
+
+
+
+$("#button").click(function(event){
     event.preventDefault();
-
-    var name = document.querySelector("#toDoList").value;
+    var name = firstDiv.val();
     window.localStorage.setItem("todaysEvents", name);
-    console.log(name)
-    console.log(localStorage)
-    console.log(name)
-    renderLastRegistered();
+    getValue();
 });
-   function renderLastRegistered(){
-    var name2 = document.querySelector("#toDoList");
-    var nameFromLocalStorage = window.localStorage.getItem("todaysEvents")
-    name2.value = nameFromLocalStorage 
-    console.log(name2)
-    console.log(name2.textContent = nameFromLocalStorage)
 
+
+
+function getValue(){
+    var nameFromLocalStorage = window.localStorage.getItem("todaysEvents")
+    firstDiv.val(nameFromLocalStorage)
     }
 
-    renderLastRegistered();
+
+
+
+    getValue();
