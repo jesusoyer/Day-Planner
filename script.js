@@ -314,7 +314,7 @@ function getValue9(){
     getValue8();
     getValue9();
 
-    //calls on the color block function to update every 10000 of a second
+    //calls on the color block function to update every 10000 milliseconds
     setInterval(colorBlocks,10000)
     // calls the function that stores conditionals to be displayed on the page
     colorBlocks();
