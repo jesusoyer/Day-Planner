@@ -1,66 +1,122 @@
 var today= moment();
-
+console.log(today)
 var dayOfWeek = moment().format('dddd, ' + "LL");   
 $("#currentDay").text(dayOfWeek);
 
 
 var dayTime = moment().format('LT');
 console.log(dayTime)
-
-var timeOfDay = moment().subtract(1,"hour").format("h:a");
-console.log(timeOfDay)
  
 
 var startTime = moment(today).hour(9);//9am
 console.log(startTime)
 
-var nextHour = startTime.add(1,"hour") //10am
-console.log(nextHour)
+var startTime2 = moment(today).hour(10);//9am
+console.log(startTime2)
 
-var nextHour2 = startTime.add(2,"hour")//11am
-console.log(nextHour2)
+var startTime3 = moment(today).hour(11);//11am
+console.log(startTime3)
 
-var nextHour3 = startTime.add(3,"hour")//12am
-console.log(nextHour3)
+var startTime4 = moment(today).hour(12);//12pm
+console.log(startTime4)
 
-var nextHour4 = startTime.add(4,"hour")//12am
-console.log(nextHour4)
+var startTime5 = moment(today).hour(13);//1pm
+console.log(startTime5)
 
-// var future=moment().add(3, 'hour').format("h:a")
-// console.log(future)
+var startTime6 = moment(today).hour(14);//2pm
+console.log(startTime6)
 
+var startTime7 = moment(today).hour(15);//3pm
+console.log(startTime7)
 
-// var setTime = moment().set('hour:a', 5);
- 
-//  console.log(setTime)
+var startTime8 = moment(today).hour(16);//4pm
+console.log(startTime8)
 
-if(dayTime>timeOfDay){
-    $("#toDoList").css("background-color", "red")        
-    console.log("it worked")
-} 
+var startTime9 = moment(today).hour(17);//5pm
+console.log(startTime9)
 
-// let classOfHour=""
-
-// let rowHr = moment(today).hour(9); 
-// console.log(rowHr)
-
-// if (today.isBefore(rowHr, "hour")) {
-//     classOfHour = "future"
-//     console.log(classOfHour)
-// } else if (today.isAfter(rowHr, "hour")) {
-//     classOfHour = "past"
-//     console.log(classOfHour)
-// } else {
-//     classOfHour = "present"
-//     console.log(classOfHour)
-// }
-
-console.log()
+function colorBlocks(){
+    
+if(moment(startTime).isSame(today)){
+    $("#toDoList").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime)){
+    $("#toDoList").css("background-color", "red") 
+} else{
+    $("#toDoList").css("background-color", "green") 
+}
 
 
 
+if(moment(startTime2).isSame(today)){
+    $("#toDoList2").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime2)){
+    $("#toDoList2").css("background-color", "red") 
+} else{
+    $("#toDoList2").css("background-color", "green") 
+}
 
 
+if(moment(startTime3).isSame(today)){
+    $("#toDoList3").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime3)){
+    $("#toDoList3").css("background-color", "red") 
+} else{
+    $("#toDoList3").css("background-color", "green") 
+}
+
+if(moment(startTime4).isSame(today)){
+    $("#toDoList4").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime4)){
+    $("#toDoList4").css("background-color", "red") 
+} else{
+    $("#toDoList4").css("background-color", "green") 
+}
+
+
+if(moment(startTime5).isSame(today)){
+    $("#toDoList5").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime5)){
+    $("#toDoList5").css("background-color", "red") 
+} else{
+    $("#toDoList5").css("background-color", "green") 
+}
+
+
+if(moment(startTime6).isSame(today)){
+    $("#toDoList6").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime6)){
+    $("#toDoList6").css("background-color", "red") 
+} else{
+    $("#toDoList6").css("background-color", "green") 
+}
+
+
+if(moment(startTime7).isSame(today)){
+    $("#toDoList7").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime7)){
+    $("#toDoList7").css("background-color", "red") 
+} else{
+    $("#toDoList7").css("background-color", "green") 
+}
+
+
+if(moment(startTime8).isSame(today)){
+    $("#toDoList8").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime8)){
+    $("#toDoList8").css("background-color", "red") 
+} else{
+    $("#toDoList8").css("background-color", "green") 
+}
+
+
+if(moment(startTime9).isSame(today)){
+    $("#toDoList9").css("background-color", "lightgrey")
+} else if(moment(today).isAfter(startTime9)){
+    $("#toDoList9").css("background-color", "red") 
+} else{
+    $("#toDoList9").css("background-color", "green") 
+}
+}
 
 
 
@@ -186,6 +242,9 @@ function getValue9(){
     ninthDiv.val(nameFromLocalStorage9)
     }
 
+
+
+    
     getValue();
     getValue2();
     getValue3();
@@ -195,3 +254,6 @@ function getValue9(){
     getValue7();
     getValue8();
     getValue9();
+
+    setInterval(colorBlocks,10000)
+    colorBlocks();
