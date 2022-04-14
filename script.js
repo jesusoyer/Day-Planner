@@ -26,10 +26,10 @@ function colorBlocks(){
 
 // conditional for the 9am input block    
 if(moment(moment(today).hour(9)).isSame(today)){
-    $("#toDoList").css("background-color", "lightgrey")
+    $("#toDoList").css("background-color", "red")
     $("#toDoList").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(9))){
-    $("#toDoList").css("background-color", "red") 
+    $("#toDoList").css("background-color", "grey") 
     $("#toDoList").css("color", "white")
 } else{
     $("#toDoList").css("background-color", "green")
@@ -39,10 +39,10 @@ if(moment(moment(today).hour(9)).isSame(today)){
 
 // conditional for the 10am input block
 if(moment(moment(today).hour(10)).isSame(today)){
-    $("#toDoList2").css("background-color", "lightgrey")
+    $("#toDoList2").css("background-color", "red")
     $("#toDoList2").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(10))){
-    $("#toDoList2").css("background-color", "red") 
+    $("#toDoList2").css("background-color", "grey") 
     $("#toDoList2").css("color", "white")
 } else{
     $("#toDoList2").css("background-color", "green")
@@ -51,10 +51,10 @@ if(moment(moment(today).hour(10)).isSame(today)){
 
 // conditional for the 11am input block
 if(moment(moment(today).hour(11)).isSame(today)){
-    $("#toDoList3").css("background-color", "lightgrey")
+    $("#toDoList3").css("background-color", "red")
     $("#toDoList3").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(11))){
-    $("#toDoList3").css("background-color", "red")
+    $("#toDoList3").css("background-color", "grey")
     $("#toDoList3").css("color", "white")
 } else{
     $("#toDoList3").css("background-color", "green") 
@@ -62,10 +62,10 @@ if(moment(moment(today).hour(11)).isSame(today)){
 }
 // conditional for the 12pm input block  
 if(moment(moment(today).hour(12)).isSame(today)){
-    $("#toDoList4").css("background-color", "lightgrey")
+    $("#toDoList4").css("background-color", "red")
     $("#toDoList4").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(12))){
-    $("#toDoList4").css("background-color", "red") 
+    $("#toDoList4").css("background-color", "grey") 
     $("#toDoList4").css("color", "white")
 } else{
     $("#toDoList4").css("background-color", "green")
@@ -74,10 +74,10 @@ if(moment(moment(today).hour(12)).isSame(today)){
 
 // conditional for the 1pm input block  
 if(moment(moment(today).hour(13)).isSame(today)){
-    $("#toDoList5").css("background-color", "lightgrey")
+    $("#toDoList5").css("background-color", "red")
     $("#toDoList5").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(13))){
-    $("#toDoList5").css("background-color", "red")
+    $("#toDoList5").css("background-color", "grey")
     $("#toDoList5").css("color", "white")
 } else{
     $("#toDoList5").css("background-color", "green")
@@ -86,10 +86,10 @@ if(moment(moment(today).hour(13)).isSame(today)){
 
 // conditional for the 2pm input block 
 if(moment(moment(today).hour(14)).isSame(today)){
-    $("#toDoList6").css("background-color", "lightgrey")
+    $("#toDoList6").css("background-color", "red")
     $("#toDoList6").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(14))){
-    $("#toDoList6").css("background-color", "red") 
+    $("#toDoList6").css("background-color", "grey") 
     $("#toDoList6").css("color", "white")
 } else{
     $("#toDoList6").css("background-color", "green")
@@ -98,10 +98,10 @@ if(moment(moment(today).hour(14)).isSame(today)){
 
 // conditional for the 3pm input block 
 if(moment(moment(today).hour(15)).isSame(today)){
-    $("#toDoList7").css("background-color", "lightgrey")
+    $("#toDoList7").css("background-color", "red")
     $("#toDoList7").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(15))){
-    $("#toDoList7").css("background-color", "red") 
+    $("#toDoList7").css("background-color", "grey") 
     $("#toDoList7").css("color", "white")
 } else{
     $("#toDoList7").css("background-color", "green")
@@ -110,10 +110,10 @@ if(moment(moment(today).hour(15)).isSame(today)){
 
 // conditional for the 4pm input block 
 if(moment(moment(today).hour(16)).isSame(today)){
-    $("#toDoList8").css("background-color", "lightgrey")
+    $("#toDoList8").css("background-color", "red")
     $("#toDoList8").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(16))){
-    $("#toDoList8").css("background-color", "red") 
+    $("#toDoList8").css("background-color", "grey") 
     $("#toDoList8").css("color", "white")
 } else{
     $("#toDoList8").css("background-color", "green")
@@ -122,10 +122,10 @@ if(moment(moment(today).hour(16)).isSame(today)){
 
 // conditional for the 5pm input block 
 if(moment(moment(today).hour(17)).isSame(today)){
-    $("#toDoList9").css("background-color", "lightgrey")
+    $("#toDoList9").css("background-color", "red")
     $("#toDoList9").css("color", "black")
 } else if(moment(today).isAfter(moment(today).hour(17))){
-    $("#toDoList9").css("background-color", "red") 
+    $("#toDoList9").css("background-color", "grey") 
     $("#toDoList9").css("color", "white")
 } else{
     $("#toDoList9").css("background-color", "green") 
