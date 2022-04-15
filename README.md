@@ -11,7 +11,16 @@ Creating this project taught me how to save and remove items from local storage.
 program.
 
 
+## Usage
 
+To use day planner type into the input block to the right of each time block. To save information inputed in a time block click the save button and it will
+save to local storage. You can do this for each time block.
+
+To reset the calender click on the reset button at the top of the page.
+
+
+
+![Day_Planner_image](https://user-images.githubusercontent.com/88277371/163588522-b974f828-3485-43a5-bd74-4f4ad21c35cc.png)
 
 
 
