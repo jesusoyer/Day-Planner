@@ -1,6 +1,6 @@
 
 # Day Planner
-
+link to deployed project https://jesusoyer.github.io/Day-Planner/
 ## Description
 This is a simple day planner that tracks day time from 9am to 5pm. It has colored timeblocks that tell the user whether time has past, is the same time, or 
 if time is still in the future; grey represents time that has past, red represents the present, and green represents time in the future. It allows the user
