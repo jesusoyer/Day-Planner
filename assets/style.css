@@ -69,3 +69,27 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+#past{
+  text-align: left;
+  background-color: grey;
+  width:50px;
+  color:white;
+  padding: 5px;
+}
+
+#present{
+  text-align: left;
+  background-color: red;
+  width:70px;
+  color:white;
+  padding: 5px;
+}
+#future{
+  text-align: left;
+  background-color: green;
+  width:60px;
+  color:white;
+  padding: 5px;
+  margin-bottom: -50px;
+}
